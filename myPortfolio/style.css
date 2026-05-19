@@ -1,0 +1,224 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+  height: 100vh;
+  background: url("https://wallpapercave.com/wp/wp2757874.jpg") center/cover
+    no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+/* =========================
+   MAIN WINDOW
+========================= */
+
+.window {
+  width: 900px;
+  background: #696969;
+
+  border: 2px solid #000;
+  border-radius: 8px;
+
+  overflow: hidden;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* =========================
+   TOP BAR
+========================= */
+
+.topbar {
+  height: 42px;
+  background: #0055d4;
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 12px;
+
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* =========================
+   WINDOW BUTTONS
+========================= */
+
+.window-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.btn {
+  width: 22px;
+  height: 22px;
+
+  background: #d4d0c8;
+
+  border: 2px solid #fff;
+  border-right-color: #555;
+  border-bottom-color: #555;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  color: black;
+
+  cursor: pointer;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav {
+  background: #c7c3ba;
+
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+
+  display: flex;
+  justify-content: space-around;
+
+  padding: 6px;
+
+  font-size: 14px;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+
+  padding: 12px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+  background: #ebe7df;
+
+  border: 2px solid #999;
+
+  padding: 14px;
+
+  min-height: 140px;
+}
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  width: 260px;
+  height: 320px;
+
+  object-fit: cover;
+
+  border: 2px solid #444;
+
+  filter: grayscale(100%);
+}
+
+.profile h1 {
+  margin-top: 14px;
+
+  font-size: 42px;
+
+  letter-spacing: 2px;
+}
+
+.profile p {
+  margin-top: 5px;
+
+  font-size: 18px;
+
+  color: #444;
+}
+
+/* =========================
+   INFO BOXES
+========================= */
+
+.info-box {
+  margin-bottom: 12px;
+}
+
+.info-box h2 {
+  font-size: 22px;
+
+  margin-bottom: 10px;
+
+  border-bottom: 2px solid #555;
+
+  padding-bottom: 5px;
+}
+
+.quote {
+  font-size: 18px;
+
+  line-height: 1.6;
+}
+
+/* =========================
+   LISTS
+========================= */
+
+ul {
+  padding-left: 22px;
+
+  line-height: 1.8;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .window {
+    width: 95%;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .profile img {
+    width: 100%;
+    height: auto;
+  }
+}
